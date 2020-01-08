@@ -1,4 +1,5 @@
 import React from 'react';
+import whatsLogo from './whats.png';
 
 const Result = ({onScreenChange , pts , lang}) => {
 	let userTitle = "Get improved friend...";
@@ -30,7 +31,7 @@ const Result = ({onScreenChange , pts , lang}) => {
 				<div>
 					{shareVia} <br/>
 					<a href={whatsappUrl} data-action="share/whatsapp/share">
-					<img src = 'https://i.pinimg.com/originals/11/8a/e3/118ae31cfcff8080d834e3e4e646d8e7.png' 
+					<img src = {whatsLogo} 
 					style = {{height:'15%' ,width : '15%'}}/></a> 
 				</div>
 				<div style = {{ marginTop: 20}}>

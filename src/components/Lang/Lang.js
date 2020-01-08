@@ -1,12 +1,14 @@
 import React from 'react';
+import en from './en.png';
+import heb from './heb.png';
 
 const Lang = ({onLangChange}) =>{
 	return (
 			<div>
-				<img src = 'https://www.countries-ofthe-world.com/flags-normal/flag-of-Israel.png'
+				<img src = {heb}
 				alt = 'Hebrew' onClick = {()=> onLangChange('Hebrew')}
 				style = {{height:'30px' , width:'50px' ,marginRight : '5px'}}/>
-				<img src = 'https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png'
+				<img src = {en}
 				alt = 'English' onClick = {() => onLangChange('English')}
 				style = {{height:'30px' , width:'50px'}}/>
 			</div>
